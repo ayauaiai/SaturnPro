@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LemanaPro — Interior Styling</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo"><strong>LemanaPro</strong></div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+  <div class="nav-icons">
+<a href="search.html" style="text-decoration:none;">
+  <img 
+    src="https://img.icons8.com/ios-filled/50/000000/search--v1.png"alt="Search" style="width:22px; height:22px; vertical-align:middle;"
+  >
+</a>
+
+    <a href="cart.html" style="position:relative;">
+      <span>🛒</span>
+      <span id="cart-count" style="background:#000;color:#fff;font-size:10px;padding:2px 6px;border-radius:50%;position:absolute;top:-10px;right:-10px;">0</span>
+    </a>
+  </div>
+</header>
+
+
+
+<section style="
+  position:relative;
+  background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600') center/cover no-repeat;
+  min-height: 50vh;
+  padding:120px 20px;
+">
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+  "></div>
+
+  <div style="position:relative; z-index:2; color:#fff; text-align:center;">
+    <h1 style="font-size:64px;">Interior Styling</h1>
+    <p style="font-size:18px;">
+      We create functional, aesthetic interiors
+    </p>
+  </div>
+</section>
+
+
+<section class="discover-section">
+  <h2>Discover more for you</h2>
+</section>
+
+
+
+<main class="product-grid">
+
+    <div class="product-card">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200" alt="">
+        </div>
+        <div class="product-info">
+            <h3>Residential Interior Styling</h3>
+            <p class="price">
+                Apartments · Houses · Studios
+            </p>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200" alt="">
+        </div>
+        <div class="product-info">
+            <h3>Commercial Spaces</h3>
+            <p class="price">
+                Offices · Cafés · Hotels · Retail
+            </p>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200" alt="">
+        </div>
+        <div class="product-info">
+            <h3>Interior Staging</h3>
+            <p class="price">
+                Real estate · Showrooms · Photo styling
+            </p>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1200" alt="">
+            </div>
+        <div class="product-info">
+            <h3>Full Project Support</h3>
+            <p class="price">
+                Concept → Implementation
+            </p>
+        </div>
+    </div>
+
+</main>
+
+
+<section class="shop-header" style="padding-top: 20px;">
+    <h1 style="font-size:48px;">How we work</h1>
+    <div class="filters" style="max-width:800px; margin:20px auto;">
+        Consultation → Concept → Visualization → Styling → Final result
+    </div>
+</section>
+
+
+<section class="shop-header" style="padding-top: 10px;">
+    <h1 style="font-size:42px;">Let’s create your space</h1>
+    <div class="filters">
+        <a href="contact.html" class="active" style="text-decoration:none;">
+            Request a consultation
+        </a>
+    </div>
+</section>
+
+<footer style="background-color:#111; color:#fff; padding:50px 20px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:80px; font-family:Arial, sans-serif;">
+
+  <div style="flex:1 1 180px;">
+    <h3 style="margin-bottom:20px;">About LemanaPro</h3>
+    <p style="line-height:1.6; color:#ccc; font-size:15px;">
+      LemanaPro is a modern furniture store focused on quality, comfort, and timeless design.<br>
+      We help you create spaces that feel like home.
+    </p>
+  </div>
+
+  <div id="newsletter" style="flex:1 1 180px;">
+    <h3 style="margin-bottom:20px;">Get exclusive updates and subscribe to our newsletter</h3>
+    <input type="email" placeholder="Your email address" id="newsletterEmail" style="width:100%; padding:10px; margin-bottom:10px; border:none; border-bottom:1px solid #ccc; background:transparent; color:#fff;">
+    <label style="display:block; margin-bottom:10px;">
+      <input type="checkbox" id="newsletterCheck"> Yes, subscribe me to your newsletter.
+    </label>
+    <button id="subscribeBtn" style="padding:10px 20px; background-color:#6b6759; border:none; cursor:pointer; color:#fff;">SUBSCRIBE NOW</button>
+  </div>
+
+  <div style="flex:1 1 180px;">
+    <h3 style="margin-bottom:20px;">Useful link</h3>
+    <a href="index.html" style="color:#fff; text-decoration:none; display:block; margin-bottom:10px; font-size:20px;">Home</a>
+    <a href="shop.html" style="color:#fff; text-decoration:none; display:block; margin-bottom:10px; font-size:20px;">Shop</a>
+    <a href="about.html" style="color:#fff; text-decoration:none; display:block; margin-bottom:10px; font-size:20px;">About</a>
+    <a href="contact.html" style="color:#fff; text-decoration:none; display:block; margin-bottom:10px; font-size:20px;">Contact</a>
+  </div>
+
+  <div style="flex:1 1 180px;">
+    <h3 style="margin-bottom:20px;">Get in touch</h3>
+    <p style="margin-bottom:10px;">Need assistance? Give us a call.<br>
+      <a href="tel:+77771234567" style="color:#fff; text-decoration:none;">+7 (777) 123-45-67</a>
+    </p>
+    <p style="margin-bottom:10px;">Have questions or suggestions?<br>
+      <a href="mailto:lemanapro@gmail.com" style="color:#fff; text-decoration:none;">lemanapro@gmail.com</a>
+    </p>
+    <div style="display:flex; gap:10px;">
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" style="width:24px; height:24px;"></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter" style="width:24px; height:24px;"></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" style="width:24px; height:24px;"></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/pinterest.png" alt="Pinterest" style="width:24px; height:24px;"></a>
+    </div>
+  </div>
+
+  <div style="width:100%; text-align:center; margin-top:40px; font-size:14px; color:#888;">
+    © 2025 LemanaPro — quality furniture for home and office.
+  </div>
+
+</footer>
+
+
+<script>
+    $('#hamburger').click(function() {
+        $('#nav-menu').toggleClass('mobile-active');
+    });
+</script>
+
+</body>
+</html>
